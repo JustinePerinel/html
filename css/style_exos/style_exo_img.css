@@ -1,0 +1,47 @@
+@font-face
+{
+font-family: "My Butterfly";
+src: url(../../butterfly.ttf);
+}
+
+body {
+    background: url(../../img/fichier.jpeg);
+    font-size: 1em;
+}
+#main {
+    width: 80%;
+    margin: auto;
+    padding: 10px 15px 50px 25px;
+}
+
+h1 {
+    text-align: center;
+    /* letter-spacing: 0.5em; */
+    color: #8BC5D6;
+    font-weight: bold;
+    font-size: 6em;
+    font-style: italic;
+    font-family: "My Butterfly";
+    border: 5px solid #8BC5D6;
+    background-color: rgba(255, 255, 255, 0.774);
+}
+
+
+a {
+    padding: 5px;
+    text-decoration: none;
+    color: #8BC5D6;
+    font-weight: bolder;
+    /* line-height: 35px; */
+    font-size: 2em;
+    text-transform: underline;
+    display: block;
+    border-bottom: 3px solid #8BC5D6;
+}
+
+#contenu {
+    background-color: rgba(255, 255, 255, 0.952);
+    border: 5px solid #8BC5D6;
+    padding-top: 15px;
+    padding-bottom: 45px;
+}

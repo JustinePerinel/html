@@ -1,0 +1,66 @@
+/* Ma première feuille de style externe pour la page index.html */
+
+body {
+    background-image: url(../img/code.jpg);
+    color: black;
+}
+#main {
+    background-color: white;
+    margin: auto;
+    width: 1300px;
+    padding: 10px;
+}
+h1 {
+    color: #13851c;
+    text-transform: uppercase;
+    text-align: center;
+}
+h2 {
+    color: #1ea150;
+    background-color: rgb(217, 250, 233);
+    text-transform: uppercase;
+}
+code{
+    background-color: white;
+    color: red;
+}
+
+#inline-block a {
+    display: inline-block;
+    width: 155px;
+    height: 20px;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid rgb(6, 82, 10);
+    color: rgb(8, 153, 30);
+    background-color: rgb(215, 253, 234);
+}
+nav {
+    text-align: center;
+}
+
+/* LES LIENS */
+
+a:link {
+color: rgb(11, 216, 42);
+text-decoration: none;
+}
+a:visited {
+background-color: rgb(215, 253, 234);
+}
+a:hover {
+color: white;
+background-color: rgb(11, 216, 42);
+text-decoration: underline;
+}
+a:active {
+color: white;
+background-color: black;
+}
+
+#haut {
+    text-align: right;
+}
+#bas {
+    text-align: right;
+}

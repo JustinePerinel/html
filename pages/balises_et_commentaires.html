@@ -1,0 +1,121 @@
+<!DOCTYPE html><!-- La balise DOCTYPE va aider le navigateur à lire la paga -->
+<html lang="fr"><!-- La balise html va donner au navigateur le langage de la page, ici accompagné de l'attribut lang="fr" pour préciser dans quelle langue le texte va être -->
+<head><!-- La balise head est celle qui va contenir à la fois les méta-données et le nom de la page. -->
+		<meta charset="UTF-8"><!-- Cette première balise meta va apporter au navigateur l'information sur le jeu de caractères à utiliser -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Cette deuxième balise meta va dire au navigateur que si la page est ouvert sur un portable il faudra l'adapter aux dimentions -->
+	<title>Cours</title><!-- La balise title va définir le nom de la page (dans l'onglet) -->
+		<style>/* 
+		1. La balise style va permettre de rentrer dans le CSS et donc de commencer à habiller la page 
+		2. header va préciser que l'on modifie toute la partie contenue entre les balises ouvrante et fermante header
+		3. à l'intérieur d'accolade on précsisera l'habillage que l'on veut faire de l'élément, ici une couleur de fond gris
+		4. la couleur du texte est définie par color et ici elle sera blanche
+		5. on demande de transformer le texte et ici en majuscule
+		6. on demande d'aligner le texte et ici, au centre */	
+			header {
+			background-color: grey; 
+			color: white;
+			text-transform: uppercase;
+			text-align: center; 
+			}
+		/*1. on parle ici de toute la page
+		2. on demande une couleur de fonc gris clair
+		3. on demande une couleur de texte noir 
+		4. on demande une typo particulière pour toute la page, ici une typo helvetica */
+			body {
+			background-color: lightgrey;
+			color: black;
+			font-family: helvetica;
+			}
+		/*1. on parle ici des titres h2
+		2. on demande de transformer le texte et ici en majuscule
+		3. on demande de changer la couleur et ici en bleu*/
+			h2 {
+			text-transform: uppercase;
+			color: blue;
+			}
+		/*1. on parle ici des titres h3
+		2. on demande de changer la couleur et ici en vert*/
+			h3 {
+			color: green;
+			}
+		/*1. on parle ici du bas de la page
+		2. on demande une couleur de fonc gris foncé
+		3. on demande une couleur de texte blanche  */
+			footer {
+			background-color: darkgrey;
+			color: white;
+			}
+		</style>
+</head>
+<body><!-- La balise body va contenir toutes les informations qui se trouveront sur la page. TOUT LE CONTENU se situe entre la balise body ouvrante et la fermante -->
+	<header><!-- la balise header contient un en-tête, on peut la retrouver plusieurs fois dans la page, elle peut contenir du titre da la navigation mais aussi du texte -->
+		<h1>Cours HTML 5</h1><!-- titre de niveau 1, ce sera le titre principal de la page. APPARAÎT UNE SEULE FOIS -->
+			<nav><!-- La balise nav va marquer la zone pour un menu -->
+				<ul><!-- La balise ul signifie "unordered list" (liste non-ordonnée) et contiendra toujours des balises li -->
+					<li>Les balises</li><!-- La balise li vient de l'anglais "list item" (élément de liste) -->
+					<li>Leur signification</li>
+				</ul>
+			</nav>
+			<p>Bienvenue sur ma page</p><!-- la balise p est la balise qui marque un paragraphe -->
+	</header>
+	<section><!-- SECTION : une section qui contiendra de nombreux éléments (balises), c'est la section principale  -->
+		<h2>Les balises ouvrantes et fermantes</h2>
+			<div><!-- DIV pour divide (division) -->
+				<article><!-- La balise article sert à montrer qu'un article commence -->
+				<h3>Les balises DIV</h3><!-- titre de niveau 3-->
+					<p><strong>Les balises DIV</strong><!-- les balises strong servent à mettre le texte qu'elles entourent en gras --> sont là pour diviser des zones de la page. Ce sont des zones supplémentaires de contenu.</p>
+				</article>
+				<article>
+				<h3>Les balises h1</h3>
+					<p><em>Les balises h1</em><!-- les balises em servent à mettre le texte qu'elles entourent en italique --> entourent le titre principal de la page. Elles ne peuvent apparaître qu'une fois. </p>
+				<article>
+				<h3>Quelques autres exemples</h3>
+					<p>Les balises ouvrantes et fermantes indispensables</p>
+					<ol><!-- La balise ol vient de l'anglais ordered list (liste ordonnée. Elle doit toujours comprendre les éléments li -->
+						<li>html</li>
+						<li>head
+							<ol><!-- on peut intégrer une ol ou une ul (liste ordonnée ou non-ordonnée avant une balise li fermante -->
+							<li>meta</li>
+							<li>title</li>
+							<li>style</li>
+							</ol></li>
+						<li>body</li>
+					</ol>
+				</article>
+				</article>
+			</div>
+	</section>
+<hr>
+	<section>
+		<h2>Les balises vides</h2>
+			<div>
+				<article>
+				<h3>La balise hr</h3>
+					<p><strong>Les balise hr</strong> est là pour aider à séparer le contenu de façon visuelle. Elle forme un trait qui va permettre de séparer du contenu.</p>
+				</article>
+				<article>
+				<h3>Les balises br</h3>
+					<p><em>La balise br</em> va permettre un passage à la ligne forcé. Par exemple, je passe à la ligne<br> entre ça et ça.</p>
+				</article>
+			<aside><!-- ASIDE une partie indépendante d'une autre partie, un à côté.  -->
+				<p>Une partie à côté de la section, un à côté.</p>
+			</aside>
+			</div>
+	</section>
+<hr>
+	<h3>Les citations</h3>
+			<blockquote>Longtemps, je me suis couché de bonne heure. Parfois, à peine ma bougie éteinte, mes yeux se fermaient si vite que je n’avais pas le temps de me dire : "Je m’endors". Et, une demi-heure après, la pensée qu’il était temps de chercher le sommeil m’éveillait ; je voulais poser le volume que je croyais avoir encore dans les mains et souffler ma lumière ; je n’avais pas cessé en dormant de faire des réflexions sur ce que je venais de lire, mais ces réflexions avaient pris un tour un peu particulier ;il me semblait que j’étais moi-même ce dont parlait l’ouvrage : une église, un quatuor, la rivalité de François Ier et de Charles Quint.</blockquote><!-- la balise blockquote permet de mettre une citation dans un paragraphe avec un retrait -->
+			<p><cite>Veni, vidi,vici</cite>, Jules César</p> <!-- la balise cite permet de mettre une citation en italique -->
+			<q>Les sanglots longs<br>
+			Des violons<br>
+			De l’automne<br>
+			Blessent mon coeur<br>
+			D’une langueur<br>
+			Monotone.</q><!-- la balise q marque une citation courte qui sera placée entre guillements -->
+		<h5>Paul VERLAINE</h5>
+		<footer><!-- FOOTER ; le pied de la page -->
+			<h5>Un titre de niveau 5 dans le footer</h5>
+			<p>Le footer est la zone du bas de la page, qui contiendra, par exemple, le plan du site, les mentions légales, les liens vers les réseaux sociaux, etc.</p>
+		</footer>
+</body>
+</html>

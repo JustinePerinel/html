@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Des tableaux</title>
+    <link rel="stylesheet" href="../css/style_tableau.css">
+</head>
+<body>
+    <h1>Des tableaux, pour les données tabulaires</h1>
+    <!-- table = tableau, (border="(1.2.3.etc.)" obsolète mais parfois utile pendant le développement) -->
+    <table>
+        <!-- caption = légende du tableau  -->
+        <caption>Ventes de la semaine</caption>
+        <!-- thead est l'en-tête de tableau  -->
+        <thead>
+            <!-- tr = table row = rangée de tableau, chaque TR doit contenir le même nombre de TD ou TH-->
+            <tr>
+                <!-- table head, les en-tête de colonnes -->
+                <th>Jour</th> 
+                <th>Smartphone</th>
+                <th>Tablettes</th>
+                <th>Ordinateur portable</th>
+            </tr>
+        </thead>
+        <!-- tb = table body = le corps du tableau -->
+        <tbody>
+            <tr>
+                <!-- table data = cellule  -->
+                <td>Lundi</td>
+                <td>5</td>
+                <td>2</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Mardi</td>
+                <td>10</td>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Mercredi</td>
+                <td>16</td>
+                <td>5</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Jeudi</td>
+                <td>1</td>
+                <td>2</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Vendredi</td>
+                <td>3</td>
+                <td>3</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <!-- td*4 pour avoir 4 td  -->
+                <td>Samedi</td>
+                <td>10</td>
+                <td>10</td>
+                <td>10</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <!-- tr>td*4 permet de créer la balise tr avec dedans 4 td  -->
+            <tr>
+                <td>Total</td>
+                <td>45</td>
+                <td>23</td>
+                <td>18</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br><hr><br><hr>
+    <h2>Un second tableau</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <!-- l'attribut colspan va permettre de fusionner les cellules indiquées par sa valeur  -->
+                    <th colspan="2">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Amadeus Mozart</td>
+                    <td>mozart@gmail.com</td>
+                    <td>amadeus@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Mohammed Ali</td>
+                    <td>momo@gmail.com</td>
+                    <td>ali@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+    <br><hr><br><hr>
+    <h2>Un troisième tableau</h2>
+    <table>
+        <tr>
+            <td>Nom</td>
+            <td>Mozart</td>
+        </tr>
+        <tr>
+            <!-- l'attribut rowspan va permettre de fusionner des lignes du tableau, ici 2 -->
+            <td rowspan="2">Email</td>
+            <td>mozart@gmail.com</td>
+        </tr>
+        <tr>
+            <td>amadeus@gmail.com</td>
+        </tr>
+    </table>
+</body>
+</html>

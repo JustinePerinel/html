@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini exo 9</title>
+    <style>
+        body {
+            background-color: rgb(180, 252, 252);
+        }
+        h1 {
+            color: rgb(1, 153, 153);
+            text-align: center;
+            text-transform: uppercase;
+        }
+        header {
+            background-color: rgb(98, 248, 248);
+        }
+        /* on parle de la UL dont l'ID est menu-horizontal */
+        ul#menu-horizontal {
+            /* pas de puces dans la UL */
+            list-style-type: none;
+            background-color: rgb(101, 224, 224);
+        }
+        ul#menu-horizontal li {
+            /* [display: inline] change la nature des LI qui sont de type "block" en type inline  */
+            
+            display: inline;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Des liens pour faire une navigation</h1>
+        <ul id="menu-horizontal">
+            <!-- Les LI sont des éléments de type "BLOCK"  -->
+            <li><a href="#">Menu 1</a></li>
+            <li><a href="#">Menu 2</a></li>
+            <li><a href="#">Menu 3</a></li>
+            <li><a href="#">Menu 4</a></li>
+            <li><a href="#">Menu 5</a></li>
+            <li><a href="#">Menu 6</a></li>
+        </ul>
+        <ul>
+            <li>a</li>
+            <li>b</li>
+            <li>c</li>
+        </ul>
+    </header>
+</body>
+</html>

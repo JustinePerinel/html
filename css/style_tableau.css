@@ -1,0 +1,42 @@
+body {
+    background-color: cornsilk;
+    font: italic 1em sans-serif;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* les styles pour le tableau  */
+table, td, th {
+    border: 0.2px solid rgb(131, 127, 79);
+    /* border-collapse = bordure fusionnée ou séparée  */
+    border-collapse: collapse;
+}
+
+th, td {
+    /* padding = rembourrage (marge intérieure)  */
+    padding: 10px;
+}
+
+caption {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(131, 127, 79);
+}
+
+thead {
+    text-transform: uppercase;
+    background-color: #333;
+    color: #fff;
+}
+
+th {
+    text-align: center;
+}
+
+td {
+    text-align: right;
+    color: #333;
+    background-color: #fff;
+}

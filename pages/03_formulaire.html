@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire HTML</title>
+    <link rel="stylesheet" href="../css/style_formulaire.css">
+</head>
+<body>
+    <h1>Un formulaire HTML</h1>
+    <h2>Un lien vers <a href="liens.html">la page des liens</a></h2>
+    <hr>
+    <!-- je déclare le formulaire avec FORM -->
+    <h3>Un formulaire</h3>
+<!-- les attributs action(un fichier) et method(post (envoyer) ou get(récupérer)) seront insdispensables pour envoyer le formulaire, on le verra plus quand on fera du php -->
+        <form action="formulaire.php" method="POST"><br>
+            <!-- Fieldset représente l'élément de champ de formulaire  -->
+            <fieldset>
+                <!-- legend représente la légende du fieldset  -->
+                <legend>Nom et Prénom</legend>
+                <!-- le binome label = étiquette et input = champs de saisie de donnée (ou label et select = champs de sélection etc.)  -->
+                <label for="nom">Nom *</label>
+                <input type="text" name="nom" id="nom" placeholder="Votre nom de famille" required>
+                <!-- label vient avec l'attribut for qui contient l'ID (identifiant) de l'input !attention, cet identifiant est unique sur la page! -->
+                <label for="prenom">Prénom *</label>
+                <input type="text" name="prenom" id="prenom" placeholder="Votre prénom" required><br><br>
+                <label for="email">Courriel *</label>
+                <input type="email" name="mail" id="email" placeholder="Votre courriel" required> <br><br>
+            
+
+                <label for="genre">Votre sexe</label>
+                <select name="genre" id="genre">
+                    <option value="F">Femme</option>
+                    <option value="H">Homme</option>
+                    <option value="A">Autre</option>
+                </select> <br><br>
+            
+                <label for="tranche">Votre tranche d'âge</label>
+                <!-- l'attribut checked, le bouton radio est coché par défaut  -->
+                <input type="radio" name="tranche" id="tranche" checked> De 7 à 77 ans
+                <input type="radio" name="tranche"> Plus de 77 ans
+            </fieldset> <br><br>
+
+            <fieldset>
+                <legend>Informations de connexion</legend>
+                <label for="pseudo">Pseudonyme</label>
+                <!-- un input peut être de différents types (text password email etc.) -->
+                <input type="text" name="pseudo" id="pseudo" placeholder="Votre pseudo" required><br><br>
+
+                <label for="mdp">Mot de passe *</label>
+                <input type="password" name="mdp" id="mdp" placeholder="Votre mot de passe">
+                
+            </fieldset><br><br>
+            <fieldset>
+                <legend>Connectez vous</legend>
+                <!-- pour réinitialiser le formulaire, un INPUT de type reset  -->
+                <input type="reset" name="annuler" value="Effacer">
+                <!-- pour envoyer le formulaire, un input dont la valeur de l'attribut est submit (soumettre) -->
+                <!-- l'attribut value envoie une valeur, une information utile à l'envoi du formulaire ou à la récupération des données  -->
+                <input type="submit" name="connexion" value="Se connecter">
+
+            </fieldset><br>
+        </form>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam a aliquid, odio adipisci voluptate labore, architecto ipsa, non nesciunt doloremque consequuntur et maxime? Est alias aspernatur provident sit quisquam nesciunt?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, magnam fuga tenetur mollitia quisquam eos possimus molestiae ipsa sed, maxime, autem deleniti nulla est ducimus amet esse eaque neque aut?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa recusandae in odio facere sapiente eius quam illum error maxime, soluta id modi sequi eum. Hic nostrum eaque optio suscipit vitae?<br>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum deleniti nostrum modi ipsam. Cumque dignissimos at asperiores blanditiis doloribus provident, consequatur nisi consectetur deserunt sequi tempore porro vero dolore Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius numquam aut voluptate cupiditate corporis impedit facere incidunt id accusantium, fugiat itaque nisi ipsam aliquid deserunt alias voluptas est animi quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, vero voluptate? Sed quasi quisquam sequi, eaque saepe voluptas eveniet culpa totam voluptatum, porro, dolore voluptatem facilis. Nam quaerat doloremque architecto.</p>
+</body>
+</html>

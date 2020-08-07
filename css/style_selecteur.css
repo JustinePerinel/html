@@ -1,0 +1,50 @@
+body {
+    background-color: ivory;
+    font: italic 1em sans-serif;
+}
+
+h1 {
+    color: brown;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+section {
+    background-color: lemonchiffon;
+}
+
+/* tous les p à l'intérieur de la balise section ont une couleur en commun  */
+section p {
+    color: rgb(252, 136, 153);
+}
+
+/* le premier p à l'intérieur de la balise section va être, ici, coloré en vert */
+section p:first-child {
+    color: lime;
+}
+
+/* le dernier p à l'intérieur de la balise section va être, ici, en majuscule */
+section p:last-child {
+    text-transform: uppercase;
+}
+
+/* Tous les paragraphes impairs sont ciblés et prendront ici une teinte rosée  */
+section p:nth-child(odd) {
+    background-color: mistyrose;
+}
+
+
+/* le septième enfant de la section va ici avoir un fond blanc */
+section p:nth-child(7) {
+    background-color: rgb(252, 252, 252);
+}
+
+/* Le 5è et le 9è enfant vont ici prendre des majuscules à chaque mot */
+section p:nth-child(5), section p:nth-child(9) {
+    text-transform: capitalize;
+}
+
+/* Tous les paragraphes pairs sont ciblés et prendront ici une couleur menthe à l'eau */
+section p:nth-child(even) {
+    background-color: rgb(151, 226, 201);
+}

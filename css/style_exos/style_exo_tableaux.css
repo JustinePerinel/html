@@ -1,0 +1,82 @@
+body {
+    background-color: rgb(253, 240, 238);
+    /* font-family: cursive; */
+    /* font: italic 2em; */
+}
+h1 {
+    color: rgb(248, 19, 134);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2 {
+    color: hotpink;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+hr {
+    color: hotpink;
+}
+
+/* STYLE DE LIENS */
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: rgb(134, 39, 87);
+    background-color: rgb(253, 240, 238);
+    font-weight: bold;
+}
+
+a:visited {
+    color: rgb(177, 4, 90);
+}
+
+a:hover {
+    color: hotpink;
+    background-color: white;
+    text-decoration: underline;
+}
+
+a:active {
+    color: white;
+    background-color: black;
+}
+
+/* STYLE DU TABLEAU */
+
+table {
+    background-color: mistyrose;
+    width: 800px;
+    margin: auto;
+}
+
+table, th, td {
+    border: 2px solid hotpink;
+    border-collapse: collapse;
+    padding: 8px;
+}
+
+th {
+    background-color: lavenderblush;
+    color: hotpink;
+}
+
+tr td:first-child {
+    background-color: lavenderblush;
+    color: hotpink;
+    text-align: center;
+    font-weight: bold;
+}
+
+tr td:nth-child(2), tr td:nth-child(3) {
+    font-style: italic;
+    text-align: left;
+}
+
+section tr:nth-child(even) {
+    background-color: ivory;
+}

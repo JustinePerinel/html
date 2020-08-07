@@ -1,0 +1,38 @@
+/* CORPS DE LA PAGE */
+
+body {
+    background-color: cornsilk;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    text-align: center;
+}
+
+section {
+    background-color: white;
+}
+
+/* LES ID
+NOUS AVONS UN ID QUI EST DÉCLARÉ ET QUI S'APPLIQUE A UN SEUL ÉLÉMENT
+UNE DÉCLARATION DE STYLE S'APPLIQUANT A UN ID EST PRÉCÉDÉ D'UN # (exemple: #un-id)*/
+
+#wrapper {
+    border: 10px solid white;
+    width: 90%;
+    margin: auto;
+    background-color: lightgray;
+}
+
+/* LES CLASSES
+ICI NOUS AVONS DEUX CLASSES QUI PEUVENT S4APPLIQUER 0 UN OU PLUSIEURS ÉLÉMENTS DE LA PAGE
+UN NOM DE CLASSE EST DANS LA FEUILLE DE STYLE PRÉCÉDÉ D'UN POINT (exemple: .ma-classe) */
+
+.fond-bleu {
+    background-color: lightblue;
+}
+
+.en-italique {
+    font-style: italic;
+}
+

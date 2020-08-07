@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(250, 242, 216);   
+   }
+   h1 {
+   text-align: center;
+   text-transform: uppercase;
+   background-color: palegoldenrod;
+   }
+   h2 {
+   background-color: rgb(241, 206, 159);
+   color: maroon;
+   }
+   p {
+   background-color: rgb(255, 224, 185);
+   color: brown;
+   }
+   /* les styles pour les liens */
+   a {
+   text-decoration: none;
+   /* none = aucune donc aucune décoration du texte donc le lien n'est pas souligné  */
+   }
+   /* les pseudo-classes dans cet ordre */
+   /* lien non visité ou pas encore visité */
+   a:link {
+   color: white;
+   background-color: orange;
+   }
+   /* lien qui a été visité */
+   a:visited {
+   color: red;
+   background: deepskyblue;
+   }
+   /* lien au survol du curseur */
+   a:hover {
+   color: orange;
+   background-color: white;
+   text-decoration: underline;
+   }
+   /* quand on maintient le clic sur le lien */
+   a:active {
+   color: white;
+   background-color: black;
+   }

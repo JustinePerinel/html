@@ -1,0 +1,42 @@
+
+			body {
+				background-color: #fceaf8;
+				/* famille de typo, d'abord du verdane et s'il n'y a pas de verdana, une typo sans serif */
+				font-family: Verdana, sans-serif;
+				}
+			header {
+				background-color: white;
+				}
+			h1 {
+				color: #f776ca;
+				text-align: center;
+				text-transform: uppercase;
+				}
+			nav {
+				background-color: #fac5de;
+				color: #cd3197;
+				}
+			ul {
+				background-color: #fba2cc;
+				/* width est la largeur de l'élément */
+				width: 30%;
+				}
+			section {
+				background-color: #fc71b3;
+				}
+			article {
+				background-color: #e7aac7;
+				}
+			aside {
+				background-color: #be98aa;
+				}
+			strong {
+				color: #b52081;
+				}
+			footer {
+				background-color: #fac5de;
+				}
+			h5 {
+				color: #f776ca;
+				text-transform: uppercase;
+				}

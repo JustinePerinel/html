@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini exo 10</title>
+    <style>
+        body {
+            background-color: rgb(252, 233, 241);
+            font-family: serif;
+        }
+        h1 {
+            color: rgb(255, 118, 173);
+            font-size: 3.5em;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+            color: rgb(199, 67, 120);
+            height: 25px;
+        }
+        p {
+            font-style: italic;
+            width: 80%;
+            margin: auto;
+            background-color: seashell;
+        }
+
+        /* LES CLASSES */
+
+        .rose {
+            background-color: rgb(253, 204, 224);
+            padding: 10px;
+        }
+        .display-none {
+            display: none;
+        }
+        .display-inline {
+            display: inline;
+        }
+        .encadre {
+            border: 1px solid black;
+            padding: 5px;
+            background-color: rgb(248, 248, 248);
+        }
+        .display-block {
+            display: block;
+        }
+        .inline-block {
+            display: inline-block;
+            width: 100px;
+            text-align: center;
+            background-color: snow;
+            height: 100px;
+        }
+        .carre {
+            width: 500px;
+            height: 500px;
+            background-color: red;
+        }
+        .petit-carre {
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            float: right;
+        }
+
+        /* LES LIENS */
+
+        a:link {
+            text-decoration: none;
+            color: rgb(255, 118, 173);
+            font-weight: bolder;
+        }
+        a:visited {
+            color: rosybrown;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: rgb(255, 223, 227);
+            background-color: rgb(255, 118, 173);
+        }
+        a:active {
+            color: seashell;
+            background-color: slategrey;
+        }
+    </style>
+</head>
+<body>
+    <h1>Display</h1>
+    <div class="rose">
+        <h2>Comportement <em>normal</em> de chez normal (sans toucher au display)</h2>
+            <p><mark>Lorem ipsum dolor sit amet consectetur adipisicing elit.</mark> Placeat recusandae sed necessitatibus a soluta quaerat architecto doloribus deserunt, eaque fuga deleniti ipsam, illum blanditiis asperiores, natus corrupti nemo nihil id! Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                <!-- ici on utilise la balise span qui va nous permettre de cibler un texte ou un objet et de lui attribuer une classe, quelque soit la balise parente -->
+                <span class="encadre"> repudiandae nisi accusantium quod explicabo quam corporis,</span> obcaecati quaerat, id numquam maxime omnis ipsa dolore dolorum? Quas atque rem id mollitia! <del>Lorem ipsum dolor sit,</del> amet consectetur adipisicing elit. Consequatur libero deleniti dolor voluptas reprehenderit repudiandae at voluptates facilis recusandae nemo tempore nobis, impedit quae distinctio molestiae sapiente, placeat architecto fugiat?</p><br>
+            <p>Et là je vais aller sur le site du journal <a href="https://www.lemonde.fr/" target="_blank">Le Monde</a>, qui est un excellent journal du soir.</p>
+    </div>
+    <br>
+    <div class="rose">
+        <!-- display: inline; affiche un élément "block" comme un élément inline, de plus aucune propriété de largeur comme de hauteur n'auront d'effet -->
+        <h2>display: none;</h2>
+        <p>A. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, labore fuga? Velit nesciunt odit excepturi, numquam obcaecati nulla commodi libero quo fugiat. Doloribus tenetur odio eligendi quo excepturi explicabo Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut tempora eos hic doloremque, necessitatibus alias iste dolore provident fugit similique officiis totam quisquam minima maiores quas quis libero asperiores mollitia?</p><br>
+        <!-- Avec display: none; l'élément n'est pas affiché -->
+        <p class="display-none">B.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, cupiditate sed ipsa praesentium et tempora non ab dolore dolor, beatae nulla. Earum cum praesentium excepturi hic sit saepe deleniti quo.Aliquid id ut rem, itaque neque libero placeat? Deleniti velit ea, voluptas fugit natus accusamus ducimus suscipit beatae blanditiis ad aspernatur eveniet doloribus maiores, unde pariatur. Fugit nobis culpa eos.</p><br>
+        <p>C. Mais où est passé le paragraphe B?????</p>
+    </div>
+    <br>
+    <div class="rose">
+        <h2>display: inline;</h2>
+        <p><strong>A.</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem officiis deserunt quasi adipisci temporibus ad porro aperiam doloribus voluptatum molestias quidem eius fugiat laboriosam velit nostrum, magni perspiciatis quae ullam. Deserunt odio repellendus eum sequi quae, sed iste quo ut dolorum facere nulla amet id consequatur ab ratione modi maiores iusto neque corrupti, dignissimos dolorem saepe qui laboriosam! Magnam, rem.</p><br>
+        <p class="display-inline"><strong>B.</strong> Quis laboriosam assumenda hic, tempore ipsa vel harum nisi, voluptatum quod, nesciunt eos architecto. Ullam odit quidem accusantium natus alias vel nobis atque earum, nesciunt quibusdam non quisquam sapiente commodi.Praesentium porro excepturi, alias unde hic quo atque est explicabo molestiae magnam, facere ipsam recusandae eius aliquid. </p>
+        <p class="display-inline"><strong>C.</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, excepturi asperiores officiis impedit nemo nam exercitationem, pariatur aspernatur expedita minus nobis, sed ratione dolore. Possimus, est iure? Facere, totam iste?Consectetur animi, officiis modi tempore, soluta obcaecati illum veniam aspernatur tempora quae perferendis recusandae hic, ducimus voluptatum dicta. Veniam cupiditate facere maxime consequatur reiciendis, magnam corporis enim et obcaecati temporibus.</p>
+    </div>
+    <br>
+    <div class="rose">
+        <!-- display: block; affiche un élément comme un block, il comment sur une nouvelle ligne et prend toute la largeur -->
+        <h2>Display: block</h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore dolor debitis quam dignissimos nostrum nobis aliquam ipsam consequuntur praesentium quae velit voluptates totam culpa, magnam at tempore! Magnam, rerum repellat!
+        Magnam dolore aperiam laborum minus neque quod, omnis necessitatibus maxime. Quidem tempore dolor necessitatibus assumenda, consectetur nemo fugiat qui ad eos, quibusdam sequi. Pariatur nesciunt voluptate aut consequatur, eaque vero.
+        Sint quidem quia voluptates ex repellat consequatur dolorum. Soluta omnis nostrum vel voluptates, impedit aliquam tempora dolorem, doloribus, deleniti doloremque aliquid sapiente rerum nam distinctio harum! Ad amet corporis corrupti! Je vais sur le site de <a href="http://gravillon.net/" class="display-block encadre">Gravillon,</a> qui est un site de vélo.
+    </div>
+    <br>
+    <div class="rose">
+        <!-- display: inline-block; affiche un élément comme un élément de block en ligne. l'élément est formaté comme un élément en ligne mais on peut lui donner une valeur de hauteur et de largeur -->
+        <h2>display: inline-block</h2>
+        <p>Je vais sur le site de <a href="http://gravillon.net/" class="inline-block">Gravillon,</a> qui est un site de vélo.</p>
+    </div>
+    <div class="carre">
+        <div class="petit-carre">1</div>
+    </div>
+</body>
+</html>

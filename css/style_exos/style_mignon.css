@@ -1,0 +1,93 @@
+/* STYLE PRINCIPAL */
+
+body {
+    background: linear-gradient(mistyrose 25%, rgb(255, 105, 128), mistyrose);
+}
+
+pre {
+    text-align: right;
+}
+
+div {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(255, 149, 165);
+    text-transform: full-size-kana uppercase;
+    text-decoration: underline overline lightpink 5%;
+    padding: 5px;
+    font-size: 80px;
+    font-style: italic;
+}
+
+/* STYLE DES LIENS */
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: hotpink;
+    font-weight: bold;
+}
+
+a:visited {
+    color: hotpink;
+}
+
+a:hover {
+    color: lightpink;
+    background-color: white;
+    text-decoration: underline;
+}
+
+a:active {
+    color: white;
+    background-color: black;
+}
+
+/* STYLE POUR LE TABLEAU */
+/* L'ID PERMET DE DONNER UN STYLE DONNÉ A UN ÉLÉMENT DU HTML. ON LUI ATTRIBUT UNE VALEUR (UNIQUE DANS LA PAGE) DEVANT LAQUELLE ON METTRA # POUR LE CSS */
+
+#wrapper {
+    border-width: 25px;
+    border-style: double;
+    border-color: rgb(255, 149, 165);
+    padding: 15px;
+}
+
+td {
+    width: 4em;
+    height: 4em;
+}
+
+table, td {
+    background-color: white;
+    border-collapse: collapse;
+}
+
+
+/* LES CLASSES = ON DONNE UN ATTRIBUT "CLASS" AUQUEL ON DONNE UN VALEUR, ON RETROUVERA ENSUITE CETTE VALEUR AVEC UN POINT DEVANT POUR LE CSS  */
+
+    .black {
+        background-color: black;
+    }
+
+    .yellow {
+        background-color: rgb(255, 238, 0);
+    }
+
+    .white {
+        background-color: white;
+    }
+
+    .grey {
+        background-color: grey;
+    }
+
+    .blue {
+        background-color: blue;
+    }

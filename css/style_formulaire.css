@@ -1,0 +1,66 @@
+body {
+    background-color: azure;
+    }
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(9, 120, 247);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    color: slateblue;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+form {
+    border: 2px solid black;
+}
+
+fieldset {
+    border: thick double #0a5f81;
+    background-color: lightblue;
+}
+
+legend {
+    /* bordure en raccourci : épaisseur(width) style et couleur(color) */
+    color: steelblue;
+    background-color: white;
+    /*border-style: solid;
+    border-color: black;
+    border-width: 3px;*/
+    border: 3px solid black;
+    border-radius: 25px;
+}
+
+label {
+    color: rgb(3, 103, 204); 
+    font: italic 1.2em "Fira Sans", serif;
+}
+
+p {
+    font: italic 1.8em "Fira Sans", serif;
+}
+
+/* border-radius arrondi un élément */
+
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: oldlace;
+}
+
+a:visited {
+    color: midnightblue;
+}
+/* On peut mettre le même style pour plusieurs éléments comme p, label  */
